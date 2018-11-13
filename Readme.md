@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Vladimir Marakhovich](https://up.htmlacademy.ru/htmlcss/23/user/861217).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
