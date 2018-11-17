@@ -5,8 +5,121 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <!-- Долго вспоминал как делать кнопки с иконками (карзина, закладки, телефон и т.д. но так и не вспомнил, а в интернетах слишком много разнообразных вариантов так что наверное лучше будет подождать пока этот момент прояснится в рамках курса). -->
+    <header class="main-header">
+      <!-- верхний блок шапки -->
+      <div class="header-top-container">
+        <span class="header-logo">Техномарт</span> <!-- что это? кнопка? ссылка? логотип? картинка? -->
+        <form class="search">
+          <input type="text" placeholder="Искать здесь:">
+          <button type="submit"></button>
+        </form>
+        <button type="button" name><a href="#">Закладки: 0</a></button>
+        <button type="button" name><a href="#">Корзина: 0</a></button>
+        <button type="button" name><a href="#">Оформить заказ</a></button>
+      </div>
+      <!-- средний блок шапки -->
+      <div class="header-middle-container">
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <button type="button" name="phone">
+          <a href="tel:+78125550555">+7(812)555-05-55</a>
+        </button>
+        <ul class="user-menu">
+          <li><a href="#">Вход</a></li>
+          <li><a href="#">Регистрация</a></li>
+        </ul>
+      </div>
+      <!-- основная навигация -->
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a>Главная</a></li>
+          <li><a href="about-us.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="special-offers.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <!-- О КОМПАНИИ -->
+      <section class="about-us">
+        <h2>Компания «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдалённые точки России! Техномарт работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+          <button type="button" name="about-us">
+            <a href="#">Подробнее о компании</a>
+          </button>
+        </ul>
+      </section>
+      <!-- КОНТАКТЫ -->
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716364103!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1542449925434" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!-- одна из кнопок модального окна:  -->
+        <button type="button" name="write-us">
+          <a href="#">Заблудились? Напишите нам!</a>
+        </button>
+      </section>
+    </main>
+    <!--подвал  -->
+    <!-- Имеет ли смысл делить на 3 горизонтальных блока(соответственно делая 2 меню) или сделать 2 вертикальных блока(1. спан-техномарт+адрес 2. Одно меню с переносом) и нижнее горизонтальное(социалки)? -->
+    <footer class="main-footer">
+      <div class="footer-top">
+        <span class="header-logo">Техномарт</span>
+        <nav class="footer-top-navigation">
+          <ul>
+            <li><a href="about-us.html">Компания</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-middle">
+        <address class="address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7(812)555-05-55 <!-- пойдёт так или нужно семантично обозначить что это номер телефона? -->
+        </address>
+        <nav class="footer-top-navigation">
+          <ul>
+            <li><a href="materials.html">Материалы</a></li>
+            <li><a href="equipment.html">Техника</a></li>
+            <li><a href="tool.html">Инструмент</a></li>
+            <li><a href="special-offers.html">Спецпредложения</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2010-2017 Компания «Техномарт»<br>
+          Все права защищены
+        <p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+        <p>
+          Обратная связь:<br>
+			    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+		    </p>
+        <p>
+          Разработано &#8211;<br>
+			    <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+		    </p>
+      </div>
+    </footer>
 
   </body>
 </html>
