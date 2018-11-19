@@ -66,55 +66,51 @@
     </div>
 
     <main>
-      <div class="container">        
-        <h1>Перфораторы</h1>
-        <!-- Секция фильтров -->
+      <div>
+        <div class="container">
+          <h1>Перфораторы</h1>
+        </div>
+      </div>
+
+      <!-- Секция фильтров -->
+      <div class="container-filters">        
         <section class="filters">
           <h2>Фильтр:</h2>
           <form>
-            <p><strong>Цена:</strong></p>
-            <div class="price">
+            
+            <fieldset class="price">
+              <legend>Цена:<legend>
               <input type="range" name="price" id="price" min="0" max="50000" step="1">
               <label for="price"></label>
               <!-- Тут по ранжированию не совсем понятно, 0 - 30к это весь диапазон цен ИЛИ на значении 30к сейчас стоит ползунок? -->
-            </div>
-            <div class="manufacturers">
-              <p><strong>Производители:</strong></p>
-              <div>
+            </fieldset>
+            <fieldset class="manufacturers">
+              <legend>Производители:</legend>              
                 <input type="checkbox" id="bosch" name="bosch" checked>
-                <label for="bosch">bosch</label>
-              </div>
-              <div>
+                <label for="bosch">bosch</label>              
                 <input type="checkbox" id="interskol" name="interskol">
                 <label for="interskol">интерскол</label>
-              </div>
-              <div>
                 <input type="checkbox" id="makita" name="makita" checked>
                 <label for="makita">makita</label>
-              </div>
-              <div>
                 <input type="checkbox" id="dewalt" name="dewalt">
                 <label for="dewalt">dewalt</label>
-              </div>
-              <div>
                 <input type="checkbox" id="hitachi" name="hitachi">
                 <label for="hitachi">hitachi</label>
-              </div>
-            </div>
-            <div class="power">
-              <p><strong>Питание:</strong></p>
-              <div>
+            </fieldset>
+
+            </fieldset class="power">
+              <legend>Питание:</legend>
                 <input type="radio" id="accumulator" name="power" value="accumulator" checked>
                 <label for="accumulator">аккумуляторные</label>
-              </div>
-              <div>
                 <input type="radio" id="networked" name="power" value="networked">
                 <label for="networked">сетевые</label>
-              </div>
-            </div>
+            </fieldset>          
+
             <input type="submit" value="Показать">
+
           </form>
         </section>
+      </div>
 
         <!-- карточки товаров -->
         <!-- У любого товара может быть метка «new» (не понял будет ли это img или какой-нибудь спан стилизованный с помощью цсс) -->
