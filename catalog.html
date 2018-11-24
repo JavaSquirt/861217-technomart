@@ -78,46 +78,49 @@
         <div class="filters">
           <h2>Фильтр:</h2>
           <form>
-
             <fieldset class="price">
               <legend>Цена:<legend>
-              <input type="range" name="price" id="price" min="0" max="50000" step="1">
-              <label for="price"></label>
+              <p>
+                <input type="range" name="price" id="price" min="0" max="50000" step="1">
+                <label for="price"></label>
+              </p>
               <!-- Тут по ранжированию не совсем понятно, 0 - 30к это весь диапазон цен ИЛИ на значении 30к сейчас стоит ползунок? -->
             </fieldset>
             <fieldset class="manufacturers">
               <legend>Производители:</legend>
-                <p>
-                  <input type="checkbox" id="bosch" name="bosch" checked>
-                  <label for="bosch">bosch</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="interskol" name="interskol">
-                  <label for="interskol">интерскол</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="makita" name="makita" checked>
-                  <label for="makita">makita</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="dewalt" name="dewalt">
-                  <label for="dewalt">dewalt</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="hitachi" name="hitachi">
-                  <label for="hitachi">hitachi</label>
-                </p>
+              <p>
+                <input type="checkbox" id="bosch" name="bosch" checked>
+                <label for="bosch">bosch</label>
+              </p>
+              <p>
+                <input type="checkbox" id="interskol" name="interskol">
+                <label for="interskol">интерскол</label>
+              </p>
+              <p>
+                <input type="checkbox" id="makita" name="makita" checked>
+                <label for="makita">makita</label>
+              </p>
+              <p>
+                <input type="checkbox" id="dewalt" name="dewalt">
+                <label for="dewalt">dewalt</label>
+              </p>
+              <p>
+                <input type="checkbox" id="hitachi" name="hitachi">
+                <label for="hitachi">hitachi</label>
+              </p>
             </fieldset>
             <fieldset class="power">
               <legend>Питание:</legend>
+              <p>
                 <input type="radio" id="accumulator" name="power" value="accumulator" checked>
                 <label for="accumulator">аккумуляторные</label>
+              </p>
+              <p>
                 <input type="radio" id="networked" name="power" value="networked">
                 <label for="networked">сетевые</label>
+              </p>
             </fieldset>
-
             <input type="submit" value="Показать">
-
           </form>
         </div>
       </section>
