@@ -258,9 +258,9 @@
             <p>Вы можете забрать товар сами, заехав в наш офис.</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716364103!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1542449925434" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             <!-- одна из кнопок модального окна:  -->
-            <button type="button" name="write-us">
-              <a href="#">Заблудились? Напишите нам!</a>
-            </button>
+            <button class="button" name="write-us">
+              Заблудились? Напишите нам!
+            </button>            
           </div>
         </div>
       </section>
@@ -291,7 +291,7 @@
             <li><a href="materials.html">Материалы</a></li>
             <li><a href="equipment.html">Техника</a></li>
             <li><a href="tool.html">Инструмент</a></li>
-            <li><a href="special-offers.html">Спецпредложения</a></li>+
+            <li><a href="special-offers.html">Спецпредложения</a></li>
           </ul>
         </div>
       </div>
@@ -318,6 +318,30 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-buy visually-hidden">
+      <div>
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div>
+        <button>Оформить заказ</button>
+        <button>Продолжить покупки</button>
+      </div>
+      <span class="modal-close" aria-label="Закрыть">x</span>
+    </section>
+
+    <section class="modal modal-mail visually-hidden"><!-- Здесь будет форма -->
+      <form action="submit">
+        name email
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </form>
+      <span class="modal-close" aria-label="Закрыть">x</span>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close" aria-label="Закрыть">x</span>
+    </section>
   </body>
 
 </html>
