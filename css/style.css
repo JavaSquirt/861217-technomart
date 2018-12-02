@@ -2,7 +2,21 @@ body {
   margin: 0;
   color: #000;
   background-color: #fff;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-header {
@@ -15,8 +29,139 @@ body {
   background-color: #293449;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.header-top a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.header-top .header-logo {
+  position: absolute;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  padding: 13px 54px 13px 55px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.modal {
+  display: none;
+}
+
+h1 {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-contacts {
+  
+}
+
+.header-contacts a {
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.header-contacts p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #32425c;
+}
+
+.user-login {
+}
+
+.user-login a {
+  font-size: 21px;
+  color: #000;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.main-navigation a {
+  color: #fff;
+}
+
+.promo a {
+  text-transform: uppercase;
+}
+
+.promo-top {
+  color: #fff;
+}
+
+.promo-top h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-top a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.promo-item-1 {
+  background-color: #ffbf47;
+}
+
+.promo-item-2 {
+  background-color: #3bbce3;
+}
+
+.promo-item-3 {
+  background-color: #dc91d8;
+}
+
+.gallery-content {
+  
+}
+
+.gallery-header h3 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.gallery-header p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.gallery a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+}
+
+.promo-right {
+  color: #fff;
+}
+
+.promo-right h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-right a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.promo-item-4 {
+  background-color: #8ed78f;
+}
+
+.promo-item-5 {
+  background-color: #ffc047;
 }
