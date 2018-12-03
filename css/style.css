@@ -84,7 +84,6 @@ ul {
 }
 
 .search input:focus {
-  color: #000;
   background-color: #fff;
 }
 
@@ -184,31 +183,27 @@ ul {
 /* ========== ПРОМО БЛОК ========== */
 /* ================================ */
 
-.promo a {
-  text-transform: uppercase;
-}
+/* ========== ВЕРХНИЙ ========== */
 
-.promo-top {
+.promo-list h3 {
   color: #fff;
-}
-
-.promo-top h3 {
   font-size: 24px;
   line-height: 30px;
 }
 
-.promo-top a {
+.promo-list a {
+  color: #fff;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.promo-top a:hover {
+.promo-list a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.promo-top a:active {
+.promo-list a:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -224,35 +219,17 @@ ul {
   background-color: #dc91d8;
 }
 
+/* ========== ПРАВЫЙ ========== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.modal {
-  display: none;
+.promo-item-4 {
+  background-color: #8ed78f;
 }
 
+.promo-item-5 {
+  background-color: #ffc047;
+}
 
-
-
-
-
-
-
-
-
+/* ========== СЛАЙДЕР ========== */
 
 .gallery-content {
   
@@ -276,25 +253,39 @@ ul {
   background-color: #ee3643;
 }
 
-.promo-right {
-  color: #fff;
+.gallery a:hover {
+  background-color: #ca2c37;
 }
 
-.promo-right h3 {
-  font-size: 24px;
-  line-height: 30px;
+.gallery a:active {
+  background-color: #ba2732;
 }
 
-.promo-right a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #fff;
-}
 
-.promo-item-4 {
-  background-color: #8ed78f;
-}
 
-.promo-item-5 {
-  background-color: #ffc047;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+  display: none;
 }
