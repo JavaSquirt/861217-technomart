@@ -54,13 +54,11 @@ ul {
 }
 
 .header-top .header-logo {
-/*  position: absolute;*/
   font-size: 24px;
   line-height: 24px;
   color: #fff;
   text-transform: uppercase;
   background-color: #ee3643;
-  padding: 13px 54px 13px 55px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -282,6 +280,35 @@ ul {
   background-color: #ee3643;
 }
 
+/* ========== КАРТОЧКИ ТОВАРОВ ========== */
+
+.catalog-item {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.catalog-category {
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #a9a9a9;
+  font-weight: bold;
+}
+
+.new-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #ee3643;
+}
+
 /* ========== ХИДЕР СЕРВИСОВ ========== */
 
 .header-services {
@@ -365,6 +392,115 @@ ul {
   text-transform: uppercase;
 }
 
+/* ================================ */
+/* ============ FOOTER ============ */
+/* ================================ */
+
+.main-footer {
+  background-color: #32425c;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+/* ========== ЛОГОТИП ========== */
+
+.main-footer .footer-logo {
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.footer-logo:active {
+  background-color: #ba2732;
+}
+
+/* ========== АДРЕС ========== */
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  color: #f3f7f9;
+}
+
+/* ========== НАВИГАЦИЯ ========== */
+
+.main-footer ul {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* ========== ВЕРХНЯЯ НАВИГАЦИЯ ФУТЕРА ========== */
+
+.footer-top-nav a {
+  color: #f3f7f9;
+}
+
+.footer-top-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-top-nav a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+/* ========== НИЖНЯЯ НАВИГАЦИЯ ФУТЕРА ========== */
+
+.footer-bottom-nav a {
+  color: #ffd180;
+}
+
+.footer-bottom-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-nav a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+/* ========== COPYRIGHT ========== */
+
+.copyright {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* ========== SOCIAL ========== */
+
+
+
+/* ========== ЛИНКИ АКАДЕМИИ ========== */
+
+.academy {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.academy a {
+  color: #ffd180;
+}
+
+.academy a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-nav a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
 
 
 
