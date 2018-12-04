@@ -158,6 +158,51 @@ ul {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* ========== ЮЗВЕРЬ МЕНЮ (КАТАЛОГ) ========== */
+
+.user-menu-exit {
+  font-size: 21px;
+}
+
+.user-menu-exit a {
+  color: #000;
+}
+
+.user-menu-exit a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-menu a {
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-menu a:hover {
+  color: #ee3643;
+}
+
+.user-menu a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+/* ========== ХЛЕБНЫЕ КРОШКИ ========== */
+
+.breadcrumbs-catalog {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-catalog a {
+  color: #000;
+}
+
 /* ========== ГЛАВНОЕ МЕНЮ ========== */
 
 .main-navigation {
@@ -264,6 +309,13 @@ ul {
 }
 
 /* ========== ХИДЕР БЛОКА ========== */
+
+.header-block h1 {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
 .header-block h2 {
   color: #32425c;
@@ -501,6 +553,91 @@ ul {
   color: #ee3643;
   text-decoration: none;
 }
+
+/* ========== СЕКЦИЯ ФИЛЬТРОВ ========== */
+
+.container-filters {
+  font-family: 'PT Sans', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.container-filters h2 {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.container-filters legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.container-filters label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.container-filters button {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* ========== ПАГИНАЦИЯ ========== */
+
+.pagination-list {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pagination-list a {
+  color: #000;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-list a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-current a {
+  color: #fff;
+  background-color: #ee3643;
+  border: none;
+}
+
+
+
+
+
+/* ========== СОРТИРОВКА ========== */
+
+.sort {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort h2 {
+  color: #000;
+}
+
+.sort a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort a:hover {
+  color: #000;
+}
+
+.sort a:active {
+  color: #ee3643;
+}
+
 
 
 
