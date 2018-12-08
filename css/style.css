@@ -217,8 +217,8 @@ ul {
 /* ========== ХЛЕБНЫЕ КРОШКИ ========== */
 
 .breadcrumbs-catalog {
-  display: flex;
-  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -534,6 +534,65 @@ ul {
   color: #fff;
   background-color: #ee3643;
   text-transform: uppercase;
+}
+
+/* ========== ФИЛЬТР ========== */
+
+.container-filters {
+  width: 220px;
+}
+
+.filter {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+/* ========== КНОПКА ОТПРАВКИ ========== */
+
+.filter button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+/* ========== КАТАЛОГ ========== */
+
+.catalog-goods {
+  width: 700px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.catalog-item {
+  width: 218px;
+  min-height: 318px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  
 }
 
 /* ================================ */
