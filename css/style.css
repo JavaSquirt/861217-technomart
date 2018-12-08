@@ -454,9 +454,11 @@ ul {
 
 /* ========== ОПИСАНИЯ СЕРВИСОВ ========== */
 
-.services-description {
+.services-item-1,
+.services-item-2,
+.services-item-3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .services-description h3 {
