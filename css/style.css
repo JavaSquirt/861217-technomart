@@ -49,8 +49,9 @@ ul {
 }
 
 .header-top {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: #293449;
 }
 
@@ -59,13 +60,22 @@ ul {
   justify-content: space-between;
 }
 
+
 .header-top a {
   color: #fff;
   font-size: 17px;
   line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 150px;
+  text-align: center;
 }
 
 .header-top .header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 220px;
   font-size: 24px;
   line-height: 24px;
   color: #fff;
@@ -87,18 +97,54 @@ ul {
 .search input {
   border: 0;
   background-color: #293449;
+  width: 270px;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .search input:hover {
   background-color: #212a3a;
+  padding-left: 10px;
 }
 
 .search input:active {
   background-color: #293449;
+  padding-left: 10px;
 }
 
 .search input:focus {
   background-color: #fff;
+  padding-left: 10px;
+}
+
+
+.search input::-webkit-input-placeholder {
+  color: #fff;
+}
+.search input::-moz-placeholder {
+  color: #fff;
+}
+.search input::-ms-input-placeholder {
+  color: #fff;
+}
+.search input::placeholder {
+  color: #fff;
+  padding-left: 10px;
+}
+
+.search input:focus::-webkit-input-placeholder {
+  color: #000;
+}
+.search input:focus::-moz-placeholder {
+  color: #000;
+}
+.search input:focus::-ms-input-placeholder {
+  color: #000;
+}
+.search input:focus::placeholder {
+  color: #000;
 }
 
 /* ========== ЗАКЛАДКИ и КОРЗИНА ========== */
