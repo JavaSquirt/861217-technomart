@@ -59,6 +59,7 @@ ul {
 .header-middle {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 44px;
 }
 
 
@@ -302,30 +303,44 @@ ul {
 /* ========== ГЛАВНОЕ МЕНЮ ========== */
 
 .main-navigation {
-  margin: 0;
-  padding: 0;
-  font-size: 17px;
-  line-height: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .footer-top-navigation,
-.site-navigation {
+.header-top-navigation {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-.main-navigation a {
+.header-top-navigation a {
+  display: block;
   color: #fff;
-}
+  font-size: 17px;
+  line-height: 17px;
+  padding-top: 22px;
+  padding-bottom: 26px;
+  padding-left: 31px;
+  padding-right: 31px;
+  vertical-align: middle;
 
-.main-navigation a:hover {
+}
+/*
+.header-top-navigation li:last-child {
+  padding-right: 55px;
+}
+*/
+.header-top-navigation a:hover {
   color: #fff;
   background-color: #293449;
 }
 
-.main-navigation a:active {
+.header-top-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
