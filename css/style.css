@@ -44,8 +44,9 @@ ul {
 
 .main-header {
   width: 100%;
-  min-height: 320px;
   background-color: #f3f7f9;
+  padding-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .header-top {
