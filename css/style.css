@@ -669,6 +669,7 @@ ul {
 .company-and-contacts {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 86px;
 }
 
 .company-and-contacts h2 {
@@ -778,6 +779,7 @@ ul {
 .footer-middle {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 /* ========== ЛОГОТИП ========== */
@@ -785,15 +787,22 @@ ul {
 .footer-top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 .main-footer .footer-logo {
+  display: block;
+  color: #fff;
   font-size: 30px;
   line-height: 30px;
-  color: #fff;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  padding-left: 41px;
+  padding-right: 41px;
   text-transform: uppercase;
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  vertical-align: middle;
 }
 
 .footer-logo:hover {
@@ -825,9 +834,19 @@ ul {
 .footer-top-nav {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top-nav:first-child {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .footer-top-nav a {
+  display: block;
+  margin-top: 40px;
+  margin-left: 60px;
   color: #f3f7f9;
 }
 
@@ -845,9 +864,13 @@ ul {
 .footer-bottom-nav {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-bottom-nav a {
+  display: block;
+  margin-left: 60px;
   color: #ffd180;
 }
 
