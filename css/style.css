@@ -355,20 +355,45 @@ ul {
 .promo-list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 .promo-list h3 {
   color: #fff;
   font-size: 24px;
   line-height: 30px;
+  position: relative;
+  top: 24px;
+  left: 23px;
+  margin: 0;
+}
+
+.promo-list li {
+  position: relative;
 }
 
 .promo-list a {
+  position: absolute;
+  bottom: 22px;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  top: -22;
+  left: 25px;
+}
+
+.promo-top .promo-list {
+  padding-left: 0;
+}
+
+.promo-top {
+  margin-bottom: 20px;
 }
 
 .promo-list a:hover {
@@ -380,41 +405,92 @@ ul {
 }
 
 .promo-item-1 {
+  width: 300px;
+  min-height: 123px;
   background-color: #ffbf47;
 }
 
 .promo-item-2 {
+  width: 300px;
+  min-height: 123px;
   background-color: #3bbce3;
 }
 
 .promo-item-3 {
+  width: 300px;
+  min-height: 123px;
   background-color: #dc91d8;
 }
 
 /* ========== ПРАВЫЙ ========== */
 
-.promo-right .promo-list {
+.promo-right {
   display: flex;
   flex-direction: column;
 }
 
+.promo-list-right h3 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  top: 24px;
+  left: 23px;
+  margin: 0;
+}
+
+.promo-list-right li {
+  position: relative;
+}
+
+.promo-list-right a {
+  position: absolute;
+  bottom: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  top: -22;
+  left: 25px;
+}
+
+.promo-list-right {
+  padding-left: 0;
+  margin: 0;
+}
+
 .promo-item-4 {
+  width: 300px;
+  min-height: 123px;
   background-color: #8ed78f;
+  margin-bottom: 20px;
 }
 
 .promo-item-5 {
+  width: 300px;
+  min-height: 123px;
   background-color: #ffc047;
 }
 
 /* ========== СЛАЙДЕР ========== */
 
+.gallery {
+  width: 620px;
+}
+
 .promo-bottom {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .gallery-content {
-  
+  margin: 0;
 }
 
 .gallery-header h3 {
