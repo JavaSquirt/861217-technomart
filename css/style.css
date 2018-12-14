@@ -14,6 +14,11 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -25,12 +30,22 @@ ul {
   flex-direction: column;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+  
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn {
@@ -65,12 +80,12 @@ ul {
 
 
 .header-top a {
+  display: block;
   color: #fff;
   font-size: 17px;
   line-height: 18px;
   padding-top: 14px;
   padding-bottom: 13px;
-  min-width: 150px;
   text-align: center;
 }
 
@@ -97,29 +112,35 @@ ul {
 
 /* ========== ПОЛЕ ПОИСКА ========== */
 
+.header-top .search {
+  position: absolute;
+  display: block;
+  width: 270px;
+  left: 220px;
+}
+
 .search input {
+  position: relative;
+  width: 221px;
   border: 0;
   background-color: #293449;
-  width: 270px;
   font-size: 17px;
   line-height: 18px;
   padding-top: 14px;
   padding-bottom: 13px;
+  padding-left: 49px;
 }
 
 .search input:hover {
   background-color: #212a3a;
-  padding-left: 10px;
 }
 
 .search input:active {
   background-color: #293449;
-  padding-left: 10px;
 }
 
 .search input:focus {
   background-color: #fff;
-  padding-left: 10px;
 }
 
 
@@ -134,7 +155,6 @@ ul {
 }
 .search input::placeholder {
   color: #fff;
-  padding-left: 10px;
 }
 
 .search input:focus::-webkit-input-placeholder {
@@ -152,6 +172,12 @@ ul {
 
 /* ========== ЗАКЛАДКИ и КОРЗИНА ========== */
 
+.header-top .book-cart {
+  position: relative;
+  padding-left: 44px;
+  padding-right: 28px;
+}
+
 .book-cart:hover {
   background-color: #212a3a;
 }
@@ -161,10 +187,34 @@ ul {
   background-color: #161d29;
 }
 
+.book-cart::before {
+  content: "";
+  
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  
+  width: 15px;
+  height: 16px;
+  
+  background-image: url("img/sprites/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 0.3;
+}
+
+.book-cart:hover::before {
+  opacity: 1;
+}
+
+
 /* ========== ОФОРМИТЬ ЗАКАЗ ========== */
 
 .checkout {
   background-color: #63a63e;
+  padding-left: 20px;
+  padding-right: 22px;
 }
 
 .checkout:hover {
