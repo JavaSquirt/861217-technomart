@@ -197,7 +197,7 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 16px;
   
-  background-image: url("img/sprites/icon-bookmark.svg");
+  background-image: url("../img/sprites/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   
