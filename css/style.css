@@ -67,6 +67,7 @@ input[type="radio"].visually-hidden {
 .header-top {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   background-color: #293449;
   margin-bottom: 46px;
@@ -84,8 +85,8 @@ input[type="radio"].visually-hidden {
   color: #fff;
   font-size: 17px;
   line-height: 18px;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
@@ -100,6 +101,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .header-logo:hover {
@@ -126,8 +129,8 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
   font-size: 17px;
   line-height: 18px;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 49px;
 }
 
@@ -204,10 +207,21 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.cart::before {
+  background-image: url("../img/sprites/icon-cart.svg");
+}
+
 .book-cart:hover::before {
   opacity: 1;
 }
 
+.book-cart:active::before {
+  opacity: 0.6;
+}
+
+.book-cart:focus::before {
+  opacity: 0.5;
+}
 
 /* ========== ОФОРМИТЬ ЗАКАЗ ========== */
 
@@ -294,6 +308,34 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-login .enter {
+  position: relative;
+  padding-left: 48px;
+}
+
+.enter::before {
+  content: "";
+  
+  position: absolute;
+  top: 17px;
+  left: 14px;
+  
+  width: 20px;
+  height: 17px;
+  
+  background-image: url("../img/sprites/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.enter:hover::before {
+  background-image: url("../img/sprites/icon-login-hover.svg");
+}
+
+.enter:active::before {
+  background-image: url("../img/sprites/icon-login.svg");
+}
+
 /* ========== ЮЗВЕРЬ МЕНЮ (КАТАЛОГ) ========== */
 
 .user-menu-exit {
@@ -374,18 +416,13 @@ input[type="radio"].visually-hidden {
   color: #fff;
   font-size: 17px;
   line-height: 17px;
-  padding-top: 22px;
-  padding-bottom: 26px;
+  padding-top: 21px;
+  padding-bottom: 22px;
   padding-left: 31px;
   padding-right: 31px;
   vertical-align: middle;
+}
 
-}
-/*
-.header-top-navigation li:last-child {
-  padding-right: 55px;
-}
-*/
 .header-top-navigation a:hover {
   color: #fff;
   background-color: #293449;
@@ -422,20 +459,95 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.promo-list .promo-item-1::before {
+  content: "";
+  
+  position: absolute;
+  top: 31px;
+  right: 43px;
+  
+  width: 44px;
+  height: 65px;
+  
+  background-image: url("../img/sprites/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-list .promo-item-2::before {
+  content: "";
+  
+  position: absolute;
+  top: 33px;
+  right: 28px;
+  
+  width: 75px;
+  height: 61px;
+  
+  background-image: url("../img/sprites/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-list .promo-item-3::before {
+  content: "";
+  
+  position: absolute;
+  top: 31px;
+  right: 31px;
+  
+  width: 78px;
+  height: 62px;
+  
+  background-image: url("../img/sprites/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-right .promo-item-4::before {
+  content: "";
+  
+  position: absolute;
+  top: 26px;
+  right: 45px;
+  
+  width: 59px;
+  height: 72px;
+  
+  background-image: url("../img/sprites/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-right .promo-item-5::before {
+  content: "";
+  
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  
+  width: 78px;
+  height: 63px;
+  
+  background-image: url("../img/sprites/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .promo-list a {
   position: absolute;
-  bottom: 22px;
+  display: block;
+  min-width: 135px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   background-color: rgba(0, 0, 0, 0.1);
-  padding-top: 10px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 12px;
-  top: -22;
   left: 25px;
+  bottom: 22px;
 }
 
 .promo-top .promo-list {
@@ -495,18 +607,18 @@ input[type="radio"].visually-hidden {
 
 .promo-list-right a {
   position: absolute;
-  bottom: 22px;
+  display: block;
+  min-width: 135px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   background-color: rgba(0, 0, 0, 0.1);
-  padding-top: 10px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 12px;
-  top: -22;
   left: 25px;
+  bottom: 22px;
 }
 
 .promo-list-right {
@@ -576,6 +688,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   background-color: #f9f5f0;
   color: #32425c;
+  margin-bottom: 20px;
 }
 
 .header-block-main h2 {
@@ -611,39 +724,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
   margin-left: 30px;
   text-transform: uppercase;
-}
-
-/* ========== КАРТОЧКИ ТОВАРОВ ========== */
-
-.goods-list {
-  display: flex;
-}
-
-.catalog-item {
-  font-family: 'PT Sans', Arial, sans-serif;
-}
-
-.catalog-category {
-  color: #000;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
-}
-
-.old-price {
-  font-size: 17px;
-  line-height: 18px;
-  text-decoration: line-through;
-  color: #a9a9a9;
-  font-weight: bold;
-}
-
-.new-price {
-  font-size: 17px;
-  line-height: 18px;
-  color: #fff;
-  font-weight: bold;
-  background-color: #ee3643;
 }
 
 /* ========== БРЭНДЫ ========== */
@@ -772,41 +852,7 @@ input[type="radio"].visually-hidden {
 
 /* ========== КАТАЛОГ ========== */
 
-.catalog-goods {
-  width: 700px;
-}
 
-.catalog-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
-.catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 52px;
-}
-
-.catalog-item {
-  width: 218px;
-  min-height: 318px;
-  border: 1px solid #e5e5e5;
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
-
-.catalog-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.pagination-list {
-  padding: 0;
-  margin: 0;
-  
-}
 
 /* ================================ */
 /* ============ FOOTER ============ */
