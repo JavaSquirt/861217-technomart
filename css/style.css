@@ -852,7 +852,145 @@ input[type="radio"].visually-hidden {
 
 /* ========== КАТАЛОГ ========== */
 
+.catalog-items {
+  min-width: 700px;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
 
+.catalog-items .row{
+  display: flex;
+  margin-right:-20px;
+}
+
+.catalog-item {
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  min-height: 316px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.catalog-items{
+  font-size:0;
+}
+
+.catalog-item{
+  font-size:16px;
+}
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.catalog-item .buy,
+.catalog-item .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  background-color: #63a63e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Cuprum', Arial, sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.catalog-item .bookmark {
+  color: #32425c;
+  background-color: #fff;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+
+.catalog-item .image {
+  width: auto;
+  height: auto;
+}
+
+.catalog-item .title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.catalog-item .old-price {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.catalog-item .new-price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.catalog-item .new-price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid #fff;
+  border-left-color: #ee3643;
+}
 
 /* ================================ */
 /* ============ FOOTER ============ */
