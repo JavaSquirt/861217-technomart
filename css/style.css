@@ -48,10 +48,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.btn {
-
-}
-
 /* ============================ */
 /* ========== HEADER ========== */
 /* ============================ */
@@ -192,18 +188,14 @@ input[type="radio"].visually-hidden {
 
 .book-cart::before {
   content: "";
-
   position: absolute;
   top: 12px;
   left: 17px;
-
   width: 15px;
   height: 16px;
-
   background-image: url("../img/sprites/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   opacity: 0.3;
 }
 
@@ -666,18 +658,15 @@ input[type="radio"].visually-hidden {
   margin-bottom: 53px;
 }
 
-/* ========== СЛАЙДЕР ========== */
+/* --- слайдер --- */
+
+.slider-container {
+  position: relative;
+  box-sizing: border-box;
+}
 
 .slider {
   position: relative;
-  width: 620px;
-  padding-top: 27px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 22px;
-  background-color: #eeeeee;
-  margin-right: 20px;
-  box-sizing: border-box;
 }
 
 .slider-controls {
@@ -685,130 +674,127 @@ input[type="radio"].visually-hidden {
   left: 50%;
   bottom: 36px;
   z-index: 100;
-
-  width: 160px;
-  height: 10px;
-
+  min-width: 100px;
+  height: 10;
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
 }
 
-.slider-controls i {
+.slider-controls label {
   position: relative;
-
   display: inline-block;
   width: 10px;
   height: 10px;
-  padding: 6px;
-
+  margin-right: 10px;
   border-radius: 50%;
   cursor: pointer;
-
-  /* Временно для демонстрации */
-  background-color: red;
 }
 
-.slider-controls .active::before {
+.slider-controls label::after {
   content: "";
-
   position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-
-  width: 6px;
-  height: 6px;
-  margin: -6px;
-
-  background-color: inherit;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
-}
-
-.slider-controls i::after {
-  content: "";
-
-  position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 0;
+  left: 0;
   z-index: 1;
-
-  width: 18px;
-  height: 18px;
-
-  background: #ffffff;
-
+  width: 10px;
+  height: 10px;
+  background: #fff;
   border-radius: 50%;
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .slider-item {
+  width: 570px;
+  height: 217px;
+  padding-top: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 22px;
+  margin: 0 auto;
   display: none;
 }
 
 .slider-item:nth-child(1) {
+  background-image: url("../img/ravshan.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/jamshut.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
 }
 
-.slider-item:nth-child(1) {
-  background-image: url("../img/jamshut.jpg");
-  background-repeat: no-repeat;
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before {
+  content: "";  
+  position: absolute;
+  left: 0;
+  top: 5;
+  z-index: 2;  
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  background-color: inherit;
+  border-radius: 50%;
+  background-color: #ee3643;
 }
 
 .slider-item h3 {
   margin: 0;
   margin-bottom: 5px;
-
   font-size: 36px;
   line-height: 36px;
-  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
 }
 
 .slider-item p {
   margin: 0;
-/*  margin-bottom: 38px; */
+  color: #fff;
 }
 
-.button {
+/* КНОПКА */
+
+.slider-button {
+  position: absolute;
+  bottom: 22px;
   display: block;
   width: 195px;
-  padding: 13px 0;
-
-  font-size: 16px;
+  padding: 10px 0;
+  font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
-
-  background-color: #fb565a;
+  background-color: #ee3643;
   border-radius: 3px;
   border: none;
 }
 
-.button:hover,
-.button:focus {
-  background-color: #e74246;
+.slider-button:hover,
+.slider-button:focus {
+  background-color: #ca2c37;
 }
 
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #d7373b;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+.slider-button:active {
+  background-color: #ba2732;
 }
-
-
-
-
-
 
 /* ========== ХИДЕР БЛОКА ========== */
 
