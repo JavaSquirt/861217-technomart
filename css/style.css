@@ -1477,10 +1477,6 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-
-
-
-
 /* ========== СОРТИРОВКА ========== */
 
 .sort {
@@ -1506,17 +1502,112 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* ========== Модальное окно корзины ========== */
 
 .modal {
-  display: none;
+  position: fixed;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.modal-cart {
+  top: 200px;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 620px;
+  min-height: 282px;
+  margin-left: -310px;
+
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.modal-cart p {
+  position: relative;
+
+  margin-top: 68px;
+  padding-left: 98px;
+
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-cart p::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/sprites/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;;
+}
+
+.modal-cart .buttonz {
+  display: flex;
+  flex-direction: row;
+  padding-top: 37px;
+  padding-right: 80px;
+  padding-bottom: 37px;
+  padding-left: 80px;
+
+  background-color: #f1f1f1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+
+  background-color: #ffffff;
+  background-image: url("../img/sprites/icon-close.svg");
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-cart-button {
+  display: block;
+  width: 220px;
+  margin-right: 20px;
+  padding: 10px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+  border-radius: 3px;
+}
+
+.modal-cart-button:hover,
+.modal-cart-button:focus {
+  background-color: #ca2c37;
+}
+
+.modal-cart-button:active {
+  background-color: #ba2732;
+}
+
+.modal-cart-button:last-child {
+  margin-right: 0;
 }
