@@ -1605,7 +1605,9 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-cart-button:active {
-  background-color: #ba2732;
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .modal-cart-button:last-child {
