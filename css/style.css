@@ -904,15 +904,32 @@ input[type="radio"].visually-hidden {
 }
 
 .header-block-main a {
-  margin: auto;
+  display: block;
+  margin-top: 25px;
   margin-right: 24px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  padding-right: 55px;
+  padding-left: 55px;
 
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #ee3643;
+  border: none;
+  border-radius: 3px;
+}
+
+.header-block-main a:hover,
+.header-block-main a:focus {
+  background-color: #ca2c37;
+}
+
+.header-block-main a:active {
+  background-color: #ba2732;
 }
 
 .catalog-h1 {
