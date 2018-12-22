@@ -1753,3 +1753,26 @@ input[type="radio"].visually-hidden {
 
   background-color: #f4f4f4;
 }
+
+/* ========== Модальное окно с картой ========== */
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+
+  width: 940px;
+  height: 446px;
+  margin-top: -280px;
+  margin-left: -470px;
+
+  background-color: #565656;
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+}
+
+.modal-map .modal-close {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+iframe {
+  border: none;
+}
