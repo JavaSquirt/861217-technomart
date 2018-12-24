@@ -1093,6 +1093,32 @@ input[type="radio"].visually-hidden {
   color: #32425c;
 }
 
+.slider-controls li {
+  display: block;
+  min-width: 218px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 22px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: left;
+  color: #ffffff;
+
+  background-color: #32425c;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: inset 0 -1px 0 0 #33445a;
+  cursor: pointer;
+}
+
+.slider-controls .active {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+
 
 /* ========== КОМПАНИЯ и КОНТАКТЫ ========== */
 
