@@ -871,6 +871,8 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .slider-button:hover,
@@ -879,6 +881,128 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-button:active {
+  background-color: #ba2732;
+}
+
+/* СЛАЙДОР сервисов */
+
+.slide1
+{
+    background-image: url('../img/delivery.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.slide2
+{
+    background-image: url('../img/warranty.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.slide3
+{
+    background-image: url('../img/credit.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.delivery-and-services
+{
+    background-color: #f4f7f9;
+}
+
+.slider-DS
+{
+
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 102px;
+}
+
+.slider-list-DS
+{
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+
+    list-style: 0;
+}
+
+.services-description
+{
+    width: 275px;
+    min-height: 183px;
+}
+
+.slider-service-item
+{
+    width: 700px;
+}
+
+.slider-service-item h3
+{
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 36px;
+
+    margin: 0;
+
+    color: #32425c;
+}
+
+.slider-service-item p
+{
+    font-size: 13px;
+    line-height: 24px;
+
+    color: #000;
+}
+
+.slider-controls-DS label
+{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 30px;
+
+    display: block;
+
+    min-width: 220px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+
+    text-align: left;
+
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    background-color: box-shadow: inset 0 -1px 0 0 #33445a;
+    background-color: #32425c;
+}
+
+.services-description button {
+  margin-top: 30px;
+  padding: 10px 44px;
+  
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button-mail-DS:hover,
+.button-mail-DS:focus {
+  background-color: #ca2c37;
+}
+
+.button-mail-DS:active {
   background-color: #ba2732;
 }
 
@@ -963,8 +1087,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-
-
 .brands-list a {
   display: flex;
   flex-direction: row;
@@ -980,7 +1102,7 @@ input[type="radio"].visually-hidden {
 
 /* ========== СЕРВИСЫ ========== */
 
-.delivery-and-services {
+.delivery-and-services-header {
   background-color: #f4f7f9;
 }
 
@@ -1061,8 +1183,8 @@ input[type="radio"].visually-hidden {
 /* ========== СЛАЙДЕР СЕРВИСОВ ========== */
 
 .services-container {
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
   min-width: 940px;
   /* Для демонстрации */
   min-height: 100vh;
@@ -1072,9 +1194,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #f4f7f9;
-  background-image: url("../img/delivery.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
 }
 
 .slider-service-list {
@@ -1842,14 +1961,14 @@ iframe {
   border: none;
 }
 
-.overlay {
+/*.overlay {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
 
   width: 100%;
   height: 100%;
 
   background: rgba(255, 255, 255, 0.1);
-}
+}*/
