@@ -244,53 +244,43 @@
         </div>
       </div>
 
-      <section class="delivery-and-services">
-          <div class="container">
-              <div class="slider-DS">
-                  <div class="slider-controls-DS">
-                      <input class="visually-hidden" type="button" id="service-1" name="toggle" checked>
-                      <input class="visually-hidden" type="button" id="service-2" name="toggle">
-                      <input class="visually-hidden" type="button" id="service-3" name="toggle">
-                      <label for="service-1">Доставка</label>
-                      <label for="service-2">Гарантии</label>
-                      <label for="service-3">Кредит</label>
-                  </div>
-                  <ul class="slider-list-DS">
-                      <li class="slider-service-item slide-service slide1" id="slide1">
-                          <div class="services-description"> 
-                              <h3 class="slide-service-title">Доставка</h3>
-                              <p  class="slide-service-description">
-                                  Мы с удовольствием доставим ваш товар прямо 
-                                  к вашему подъезду совершенно бесплатно!
-                                  Ведь мы неплохо заработаем, 
-                                  поднимая его на ваш этаж!
-                              </p>
-                          </div>
-                      </li>
-                      <li class="slider-service-item slide-service slide2" id="slide2">
-                          <div class="services-description"> 
-                              <h3 class="slide-service-title">Гарантия</h3>
-                              <p  class="slide-service-description">
-                                  Если купленный у нас товар поломается или заискрит, 
-                                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
-                                  Дом уж восстановите как-нибудь сами.
-                              </p>
-                          </div>
-                      </li>
-                      <li class="slider-service-item slide-service slide3" id="slide3">
-                          <div class="services-description"> 
-                              <h3 class="slide-service-title">Кредит</h3>
-                              <p  class="slide-service-description">
-                                  Залезть в долговую яму стало проще! 
-                                  Кредитные консультанты придут вам на помощь.
-                              </p>
-                              <a class="button-mail-DS" href="#" type="submit">Отправить заявку</a>
-                          </div>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </section>
+      <div class="container">  
+        <div class="tab-frame">           
+            <input type="radio" checked name="tab" id="tab1">
+            <label for="tab1">Доставка</label>  
+            <input type="radio" name="tab" id="tab2">
+            <label for="tab2">Гарантии</label> 
+            <input type="radio" name="tab" id="tab3">       
+            <label for="tab3">Кредит</label>
+            <div class="tab">
+            <h3>Доставка</h3>
+            <p>
+                Мы с удовольствием доставим ваш товар прямо 
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, 
+                поднимая его на ваш этаж!
+            </p>
+            </div>
+            <div class="tab">
+            <h3>Гарантия</h3>
+            <p>
+                Если купленный у нас товар поломается или заискрит, 
+                а также в случае пожара, спровоцированного его возгаранием,  
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                Дом уж восстановите как-нибудь сами.
+            </p>
+            </div>
+            <div class="tab">
+            <h3>Кредит</h3>
+            <p>
+                Залезть в долговую яму стало проще! 
+                Кредитные консультанты придут вам на помощь.
+            </p>
+            <a class="mail-btn" href="#" type="submit">Отправить заявку</a>
+            </div>   
+        </div>       
+      </div>
+      
 
 
  
