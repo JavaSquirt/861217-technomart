@@ -884,12 +884,12 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
-/* табослайдыр */
+/* --- табослайдыр --- */
 
 div.tab-frame {
   position: relative;
 
-  min-height: 183px;
+  min-height: 285px;
 }
 
 div.tab-frame input {
@@ -905,6 +905,7 @@ div.tab-frame label {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  color: #ffffff;
 
   background-color: #32425c;
   border-top: 1px solid #4d637b;
@@ -936,6 +937,24 @@ div.tab-frame div.tab {
   padding: 5px 10px;
 }
 
+div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1) {
+  background-image: url(../img/delivery.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2) {
+  background-image: url(../img/warranty.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
 div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
 div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
@@ -945,15 +964,14 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 
   display: block;
   width: 700px;
-  min-height: 183px;
+  min-height: 285px;
   margin: 0;
   padding: 0;
-
-  background-color: blueviolet;
 }
 
 .tab-frame h3 {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   padding-left: 80px;
 
@@ -963,15 +981,45 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 }
 
 .tab-frame p {
+  width: 275px;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   padding-left: 80px;
 
   font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 
+.mail-btn {
+  display: block;
+  min-width: 195px;
+  margin: 0;
+  margin-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: 0;
+  border-radius: 3px;
+}
+
+.mail-btn:hover,
+.mail-btn:focus {
+  background-color: #ca2c37;
+}
+
+.mail-btn:active {
+  background-color: #ba2732;
+}
 
 /* ========== ХИДЕР БЛОКА ========== */
 
@@ -1073,15 +1121,17 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   background-color: #f4f7f9;
 }
 
-
+.delivery-and-services-content {
+  background-color: #f4f7f9;
+}
 
 /* ========== ХИДЕР СЕРВИСОВ ========== */
 
 .header-services {
   width: 398px;
   height: auto;
-  margin-bottom: 74px;
   padding-top: 68px;
+  padding-bottom: 74px;
 
   color: #000000;
 }
@@ -1146,39 +1196,6 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   line-height: 24px;
   color: #000000;
 }
-
-/* ========== СЛАЙДЕР СЕРВИСОВ ========== */
-
-.services-container {
-  display: flex;
-  flex-direction: column;
-  min-width: 940px;
-  /* Для демонстрации */
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  color: #000000;
-
-  background-color: #f4f7f9;
-}
-
-.slider-service-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.slide-service-title {
-  margin: 0;
-
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  color: #32425c;
-}
-
 
 /* ========== КОМПАНИЯ и КОНТАКТЫ ========== */
 
