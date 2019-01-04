@@ -948,6 +948,19 @@ div.tab-frame {
   min-height: 285px;
 }
 
+.shadow {
+  content: "";
+  position: absolute;
+  bottom: 54px;
+  left: 230px;
+
+  width: 10px;
+  height: 279px;
+
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+}
+
 div.tab-frame input {
   display: none;
 }
