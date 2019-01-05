@@ -1271,21 +1271,71 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 
 .company-and-contacts {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 86px;
+  justify-content: space-around;
+  margin: 0;
+  margin-top: 82px;
+  padding: 0;
+}
+
+div.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 121px;
 }
 
 .company-and-contacts h2 {
+  margin-top: 0;
+
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
 
-.company-and-contacts p {
+.about-us p {
+  width: 519px;
+
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+.contacts p {
+  width: 179px;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.list-orders {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.list-orders li {
+  position: relative;
+
+  margin-bottom: 25px;
+}
+
+.list-orders li:last-child {
+  margin-bottom: 0;
+}
+
+.list-orders a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -40px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
 }
 
 .list-orders a {
@@ -1294,13 +1344,30 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   color: #000000;
 }
 
-.company-and-contacts .btn {
-  font-size: 14px;
-  line-height: 17.5px;
+.buttonz {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 38px;
+  margin-top: 40px;
+  margin-bottom: 86px;
+}
+
+.btn-map {
+  min-width: 220px;
+}
+
+.buttonz .btn {
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+
   color: #ffffff;
-  text-transform: uppercase;
 
   background-color: #ee3643;
+  border-radius: 3px;
 }
 
 /* ========== ФИЛЬТР ========== */
@@ -1798,7 +1865,7 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 
   background-image: url("../img/sprites/icon-mark.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;;
+  background-position: 0 0;
 }
 
 .modal-cart .buttonz {
