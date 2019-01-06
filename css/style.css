@@ -16,10 +16,10 @@ ul {
   list-style: none;
 }
 
-/* img {
+img {
   max-width: 100%;
   height: auto;
-} */
+}
 
 .container {
   width: 940px;
@@ -1394,6 +1394,16 @@ div.contacts {
 
 /* ========== КАТАЛОГ ========== */
 
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
+  min-height: 170px;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-items {
   min-width: 700px;
   max-width: 940px;
@@ -1525,8 +1535,7 @@ div.contacts {
 
 .catalog-item .catalog-item-image {
   width: 218;
-  height: 168;
-  margin: 0;
+  height: 170;
 }
 
 .catalog-item .title {
@@ -1571,6 +1580,8 @@ div.contacts {
   border: 20px solid #ffffff;
   border-left-color: #ee3643;
 }
+
+
 
 /* ================================ */
 /* ============ FOOTER ============ */
