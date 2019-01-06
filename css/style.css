@@ -1114,13 +1114,12 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 
 .header-block-main a {
   display: block;
+  min-width: 253px;
   margin-top: 25px;
   margin-right: 24px;
   margin-bottom: 25px;
   padding-top: 11px;
-  padding-right: 55px;
   padding-bottom: 10px;
-  padding-left: 55px;
 
   font-size: 14px;
   line-height: 18px;
