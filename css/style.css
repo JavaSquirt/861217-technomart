@@ -58,7 +58,6 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   width: 100%;
-  margin-bottom: 59px;
   padding-bottom: 60px;
 
   background-color: #f3f7f9;
@@ -571,18 +570,32 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-catalog {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
 
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
   text-transform: uppercase;
 }
 
-.breadcrumbs-catalog a {
-  color: #000000;
+.breadcrumbs-catalog li {
+  position: relative;
+
+  margin-right: 15px;
+}
+
+.breadcrumbs-catalog svg {
+  margin-left: 16px;
+}
+
+.breadcrumbs-catalog .home {
+  margin-left: 0;
 }
 
 /* ========== ГЛАВНОЕ МЕНЮ ========== */
@@ -750,6 +763,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-top {
+  margin-top: 59px;
   margin-bottom: 20px;
 }
 
@@ -1466,6 +1480,26 @@ div.contacts {
   border-radius: 3px;
 }
 
+/* ========== КАТАЛОГ ========== */
+
+.catalog-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog-goods {
+  width: 700px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+
 /* ========== ФИЛЬТР ========== */
 
 .container-filters {
@@ -1745,6 +1779,34 @@ figure {
   font-style: normal;
 }
 
+/* ========== КНОПКИ СОЦСЕТЕЙ ========== */
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 134px;
+  margin: 0 auto;
+  margin-right: 69px;
+  padding: 0;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ee3643;
+}
+
 /* ========== НАВИГАЦИЯ ========== */
 
 .main-footer ul {
@@ -1785,6 +1847,11 @@ figure {
 
 /* ========== НИЖНЯЯ НАВИГАЦИЯ ФУТЕРА ========== */
 
+.footer-bottom {
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
 .footer-bottom-nav {
   display: flex;
   justify-content: space-between;
@@ -1811,21 +1878,28 @@ figure {
 /* ========== COPYRIGHT ========== */
 
 .copyright {
+  margin: 0;
+  margin-right: 140px;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 
-/* ========== SOCIAL ========== */
-
-
-
 /* ========== ЛИНКИ АКАДЕМИИ ========== */
 
 .academy {
+  width: 135px;
+  margin: 0;
+  margin-left: 40px;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.academy:first-child {
+  margin-right: 50px;
 }
 
 .academy a {
