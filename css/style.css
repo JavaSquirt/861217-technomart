@@ -32,6 +32,10 @@ img {
   flex-direction: column;
 }
 
+.catalog-item .hidden {
+  visibility: hidden;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -1474,6 +1478,7 @@ div.contacts {
   padding-bottom: 10px;
   padding-left: 40px;
 
+  text-align: center;
   color: #ffffff;
 
   background-color: #ee3643;
@@ -1484,21 +1489,9 @@ div.contacts {
 
 .catalog-columns {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
-
-.catalog-goods {
-  width: 700px;
-}
-
-.catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
 
 /* ========== ФИЛЬТР ========== */
 
@@ -1549,6 +1542,13 @@ figure {
 
 .catalog-items .row {
   display: flex;
+  margin-right: -20px;
+}
+
+.catalog-items .column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-right: -20px;
 }
 
@@ -1785,9 +1785,9 @@ figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 134px;
+  min-width: 134px;
   margin: 0 auto;
-  margin-right: 69px;
+  margin-right: 90px;
   padding: 0;
 }
 
@@ -1878,6 +1878,7 @@ figure {
 /* ========== COPYRIGHT ========== */
 
 .copyright {
+  min-width: 230px;
   margin: 0;
   margin-right: 140px;
 
@@ -1889,9 +1890,9 @@ figure {
 /* ========== ЛИНКИ АКАДЕМИИ ========== */
 
 .academy {
-  width: 135px;
+  display: block;
   margin: 0;
-  margin-left: 40px;
+  padding-left: 40px;
 
   font-size: 16px;
   line-height: 18px;
