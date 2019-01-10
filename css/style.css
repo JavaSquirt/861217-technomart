@@ -1495,8 +1495,132 @@ div.contacts {
 
 /* ========== ФИЛЬТР ========== */
 
-.container-filters {
+.filter-item {
   width: 220px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.range-filter {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.filter-item legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-controls label.max-price {
+  position: relative;
+
+  width: 95px;
+  margin-left: 15px;
+}
+
+.price-controls input {
+  width: 95px;
+  padding: 10px 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+
+  background: #f7f3ec;
+  border: none;
+}
+
+.hyphen {
+  content: "-";
+  position: absolute;
+  top: 18px;
+  left: -20px;
+
+  width: 10px;
+  height: 1px;
+
+  font-size: 1px;
+  line-height: 1px;
+
+  background-color: #444444;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+section.container-filters {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
 }
 
 .filter {

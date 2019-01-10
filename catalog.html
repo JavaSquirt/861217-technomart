@@ -85,17 +85,32 @@
 
         <div class="catalog-columns">
 
-          <section class="container-filters">
-            <h2>Фильтр:</h2>
+          <section class="container-filters">            
             <form class="filter" method="get" action="#">
-              <fieldset class="price">
+              <h2>Фильтр:</h2>
+
+              <fieldset class="filter-item">
                 <legend>Цена:</legend>
-                <p>
-                  <input type="range" name="price" id="price" min="0" max="50000" step="1">
-                  <label for="price">0 - 30000</label>
-                </p>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input name="min-price" type="text" value="0">
+                    </label>                    
+                    <label class="max-price"><span class="hyphen"></span>
+                      <input name="max-price" type="text" value="30000">
+                    </label>
+                  </div>                  
+                </div>
               </fieldset>
-              <fieldset class="manufacturers">
+
+              <fieldset class="filter-item">
                 <legend>Производители:</legend>
                 <ul>
                   <li>
@@ -120,7 +135,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="power">
+              <fieldset class="filter-item">
                 <legend>Питание:</legend>
                 <ul>
                   <li>
