@@ -915,7 +915,7 @@ input[type="radio"].visually-hidden {
   z-index: 100;
 
   min-width: 100px;
-  height: 10;
+  height: 10px;
   padding-left: 7px;
 
   font-size: 0;
@@ -992,7 +992,7 @@ input[type="radio"].visually-hidden {
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before {
   content: "";
   position: absolute;
-  top: 5;
+  top: 5px;
   left: 0;
   z-index: 2;
 
@@ -1896,8 +1896,8 @@ figure {
 }
 
 .catalog-item .catalog-item-image {
-  width: 218;
-  height: 170;
+  width: 218px;
+  height: 170px;
 }
 
 .catalog-item .title {
