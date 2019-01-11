@@ -2181,15 +2181,28 @@ figure {
 /* ========== ПАГИНАЦИЯ ========== */
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .pagination-list a {
+  display: block;
+  padding: 10px 15px;
+
   color: #000000;
 
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination-next a {
+  padding: 10px 32px;
 }
 
 .pagination-list a:hover {
@@ -2200,11 +2213,19 @@ figure {
   border: 1px solid #ee3643;
 }
 
+.pagination-item {
+  margin-right: 10px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
 .pagination-item-current a {
   color: #ffffff;
 
   background-color: #ee3643;
-  border: none;
+  border: 1px solid #ee3643;
 }
 
 /* ========== СОРТИРОВКА ========== */
