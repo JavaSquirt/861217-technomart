@@ -1498,6 +1498,7 @@ div.contacts {
 .filter-item {
   width: 220px;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   padding-bottom: 25px;
 
@@ -1505,12 +1506,121 @@ div.contacts {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.filter-item ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .range-filter {
   width: 220px;
   margin-top: 20px;
 }
 
+.container-filters fieldset {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+.container-filters fieldset:nth-child(4) {
+  margin-bottom: 80px;
+  padding-bottom: 0;
+
+  border: none;
+}
+
+.filter-option {
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -34px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/sprites/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -34px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/sprites/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -34px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/sprites/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -34px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/sprites/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter .filter-button {
+  padding-top: 15px;
+  padding-right: 39px;
+  padding-bottom: 14px;
+  padding-left: 39px;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
 .filter-item legend {
+  margin-bottom: 15px;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
