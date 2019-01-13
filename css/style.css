@@ -133,9 +133,9 @@ input[type="radio"].visually-hidden {
 }
 
 .search input {
-  position: absolute;
+  position: relative;
 
-  width: 221px;
+  min-width: 220px;
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 49px;
@@ -144,12 +144,15 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 
   background-color: #293449;
+  background-image: url("../img/sprites/icon-search.svg");
   background-repeat: no-repeat;
+  background-position: top 11px left 17px;
   border: 0;
 }
 
 .search input:hover {
   background-color: #212a3a;
+  background-image: url("../img/sprites/icon-search-white.svg");
 }
 
 .search input:active {
@@ -158,6 +161,7 @@ input[type="radio"].visually-hidden {
 
 .search input:focus {
   background-color: #ffffff;
+  background-image: url("../img/sprites/icon-search-focus.svg");
 }
 
 .search input::-webkit-input-placeholder {
@@ -184,51 +188,6 @@ input[type="radio"].visually-hidden {
 }
 .search input:focus::placeholder {
   color: #000000;
-}
-
-
-.search .input::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 17px;
-
-  width: 17px;
-  height: 17px;
-
-  color: #ffffff;
-
-  background-image: url("../img/sprites/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.3;
-}
-
-.search .input:hover::before {
-  color: #ffffff;
-
-  background-image: url("../img/sprites/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 1;
-}
-
-.search .input:active::before {
-  color: red;
-
-  background-image: url("../img/sprites/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.5;
-}
-
-.search .input:focus::before {
-  color: #ee3643;
-
-  background-image: url("../img/sprites/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.5;
 }
 
 /* ========== ЗАКЛАДКИ и КОРЗИНА ========== */
