@@ -18,10 +18,10 @@ ul {
   list-style: none;
 }
 
-img {
+/*img {
   max-width: 100%;
   height: auto;
-}
+}*/
 
 .container {
   width: 940px;
@@ -1856,10 +1856,7 @@ figure {
   display: block;
 }
 
-.catalog-item .catalog-item-image {
-  width: 218px;
-  height: 170px;
-}
+
 
 .catalog-item .title {
   min-height: 40px;
