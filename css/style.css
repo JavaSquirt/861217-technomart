@@ -378,7 +378,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.user-menu-exit a {
+.user-menu-exit .catalog-user-name {
   position: relative;
 
   display: block;
@@ -394,15 +394,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.user-menu-exit a:hover {
+.user-menu-exit .catalog-user-name:hover {
   color: #ee3643;
 }
 
-.user-menu-exit a:active {
+.user-menu-exit .catalog-user-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-menu-exit a::before {
+.user-menu-exit .catalog-user-name::before {
   content: "";
   position: absolute;
   top: 14px;
@@ -416,14 +416,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.user-menu-exit a:hover::before {
+.user-menu-exit .catalog-user-name:hover::before {
   background-image: url("../img/sprites/icon-user-hover.svg");
 }
 
-.user-menu-exit a:active::before {
+.user-menu-exit .catalog-user-name:active::before {
   background-image: url("../img/sprites/icon-user.svg");
 }
 
+/*
 .user-menu-exit a::after {
   content: "";
   position: absolute;
@@ -445,6 +446,7 @@ input[type="radio"].visually-hidden {
 .user-menu-exit a:active::after {
   background-image: url("../img/sprites/icon-logout.svg");
 }
+*/
 
 .user-menu {
   position: relative;
