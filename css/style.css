@@ -245,7 +245,19 @@ input[type="radio"].visually-hidden {
   background-color: #518534;
 }
 
-.heading {
+.heading-index {
+  width: 200px;
+  margin: 0;
+  margin-right: 43px;
+  padding-left: 51px;
+
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  font-style: italic;
+}
+
+.heading-catalog {
   width: 200px;
   margin: 0;
   margin-right: 55px;
@@ -264,19 +276,19 @@ input[type="radio"].visually-hidden {
 .header-contacts {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  margin-right: 36px;
 
   font-family: "Cuprum", Arial, sans-serif;
 }
 
-.header-contacts a {
+.catalog a {
   position: relative;
 
   width: auto;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 9px;
-  padding-left: 65px;
+  padding-left: 69px;
 
   font-size: 21px;
   line-height: 21px;
@@ -286,7 +298,38 @@ input[type="radio"].visually-hidden {
   border: 3px solid #ffffff;
 }
 
-.header-contacts a::before {
+.index a {
+  position: relative;
+
+  width: auto;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 9px;
+  padding-left: 62px;
+
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: #e9292a;
+
+  border: 3px solid #ffffff;
+}
+
+.index a::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 4px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url("../img/sprites/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog a::before {
   content: "";
   position: absolute;
   top: 11px;
@@ -300,10 +343,20 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.header-contacts p {
+.catalog p {
   margin: 0;
   padding-top: 5px;
   padding-left: 6px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.index p {
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 0;
 
   font-size: 14px;
   line-height: 24px;
@@ -482,7 +535,10 @@ input[type="radio"].visually-hidden {
 
 .user-menu a {
   display: block;
-  padding: 10px 15px;
+  padding-top: 7px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 16px;
 
   color: #32425c;
   text-decoration: underline;
@@ -541,7 +597,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-catalog li {
   position: relative;
 
-  margin-right: 15px;
+  margin-right: 17px;
 }
 
 .breadcrumbs-catalog svg {
@@ -1058,19 +1114,19 @@ div.tab-frame div.tab {
 div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1) {
   background-image: url(../img/delivery.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: bottom right;
 }
 
 div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2) {
   background-image: url(../img/warranty.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: bottom right;
 }
 
 div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: bottom right;
 }
 
 div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
@@ -1154,7 +1210,7 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 .header-block-main h2 {
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 26px;
+  margin-left: 24px;
 
   font-size: 30px;
   line-height: 30px;
@@ -1200,10 +1256,11 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 }
 
 .catalog-h1 h1 {
-  margin-top: 30px;
+  margin-top: 28px;
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 28px;
 
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1244,7 +1301,7 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 .header-services {
   width: 398px;
   height: auto;
-  padding-top: 68px;
+  padding-top: 66px;
   padding-bottom: 62px;
 
   color: #000000;
@@ -1434,9 +1491,49 @@ div.contacts {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.container-filters .filter-brand {
+  width: 220px;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  padding-bottom: 2px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .filter-item ul {
   margin: 0;
   padding: 0;
+
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-brand ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.container-filters .filter-power {
+  width: 220px;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  padding-bottom: 2px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-power ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
 
   font-size: 15px;
   line-height: 20px;
@@ -1454,14 +1551,14 @@ div.contacts {
 }
 
 .container-filters fieldset:nth-child(4) {
-  margin-bottom: 80px;
+  margin-bottom: 59px;
   padding-bottom: 0;
 
   border: none;
 }
 
 .filter-option {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-left: 35px;
 }
 
@@ -1532,10 +1629,10 @@ div.contacts {
 }
 
 .filter .filter-button {
-  padding-top: 15px;
-  padding-right: 39px;
-  padding-bottom: 14px;
-  padding-left: 39px;
+  padding-top: 10px;
+  padding-right: 38px;
+  padding-bottom: 10px;
+  padding-left: 38px;
 
   font-size: 13px;
   line-height: 18px;
@@ -1691,7 +1788,7 @@ figure {
   padding: 0;
 
   font-size: 16px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -1876,11 +1973,10 @@ figure {
   justify-content: space-between;
 }
 
-
 .footer-middle {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .footer-top {
@@ -2076,6 +2172,8 @@ figure {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-top: 29px;
+  margin-bottom: 60px;
   padding: 0;
 
   font-size: 13px;
@@ -2106,7 +2204,7 @@ figure {
 }
 
 .pagination-item {
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .pagination-item:last-child {
@@ -2123,7 +2221,7 @@ figure {
 .description {
   width: 100%;
   padding-top: 65px;
-  padding-bottom: 70px;
+  padding-bottom: 67px;
 
   color: #000000;
 
@@ -2132,8 +2230,9 @@ figure {
 
 .description h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -2150,7 +2249,7 @@ figure {
 .filter-h2 {
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 18px;
@@ -2168,7 +2267,7 @@ figure {
   display: flex;
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 18px;
