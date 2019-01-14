@@ -383,7 +383,7 @@ input[type="radio"].visually-hidden {
 
   display: block;
   padding-top: 12px;
-  padding-right: 69px;
+  padding-right: 20px;
   padding-bottom: 12px;
   padding-left: 47px;
 
@@ -424,8 +424,19 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/sprites/icon-user.svg");
 }
 
-/*
-.user-menu-exit a::after {
+.user-menu-exit .catalog-user-logout {
+  position: relative;
+
+  display: block;
+  padding-top: 25px;
+  padding-right: 26px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  background-color: #ffffff;
+}
+
+.user-menu-exit .catalog-user-logout::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -439,14 +450,13 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.user-menu-exit a:hover::after {
+.user-menu-exit .catalog-user-logout:hover::after {
   background-image: url("../img/sprites/icon-logout-hover.svg");
 }
 
-.user-menu-exit a:active::after {
+.user-menu-exit .catalog-user-logout:active::after {
   background-image: url("../img/sprites/icon-logout.svg");
 }
-*/
 
 .user-menu {
   position: relative;
