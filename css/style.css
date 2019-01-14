@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
 .header-middle {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 }
 
 
@@ -264,9 +264,9 @@ input[type="radio"].visually-hidden {
 /* ========== ЗАГОЛОВОК ГЛАВНОЙ СТРАНИЦЫ ========== */
 
 .heading {
-  width: 196px;
+  width: 200px;
   margin: 0;
-  margin-right: 70px;
+  margin-right: 55px;
   padding-left: 51px;
 
   font-size: 16px;
@@ -296,7 +296,7 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-right: 50px;
   padding-bottom: 9px;
-  padding-left: 71px;
+  padding-left: 65px;
 
   font-size: 21px;
   line-height: 21px;
@@ -310,7 +310,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 11px;
-  left: 11px;
+  left: 8px;
 
   width: 19px;
   height: 19px;
@@ -322,8 +322,8 @@ input[type="radio"].visually-hidden {
 
 .header-contacts p {
   margin: 0;
-  padding-top: 7px;
-  padding-left: 8px;
+  padding-top: 5px;
+  padding-left: 6px;
 
   font-size: 14px;
   line-height: 24px;
@@ -368,14 +368,14 @@ input[type="radio"].visually-hidden {
 .user-login .enter {
   position: relative;
 
-  padding-left: 48px;
+  padding-left: 42px;
 }
 
 .enter::before {
   content: "";
   position: absolute;
   top: 16px;
-  left: 14px;
+  left: 10px;
 
   width: 20px;
   height: 17px;
@@ -546,6 +546,10 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
+}
+
+.breadcrumbs-catalog a {
+  color: #000000;
 }
 
 .breadcrumbs-catalog li {
@@ -1122,6 +1126,7 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .tab-frame p {
@@ -1154,6 +1159,7 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   background-color: #ee3643;
   border: 0;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .mail-btn:hover,
@@ -1180,7 +1186,7 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 .header-block-main h2 {
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 26px;
 
   font-size: 30px;
   line-height: 30px;
@@ -1241,8 +1247,8 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: -20px;
-  margin-bottom: 85px;
+  margin-right: -28px;
+  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -1257,6 +1263,8 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   margin-bottom: 20px;
 
   text-align: center;
+
+  border: 1px solid #eaeaea;
 }
 
 /* ========== СЕРВИСЫ ========== */
@@ -1275,14 +1283,14 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   width: 398px;
   height: auto;
   padding-top: 68px;
-  padding-bottom: 74px;
+  padding-bottom: 62px;
 
   color: #000000;
 }
 
 .header-services h2 {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 
   font-size: 30px;
   line-height: 30px;
@@ -1290,6 +1298,8 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 }
 
 .header-services p {
+  margin-bottom: 0;
+
   font-size: 13px;
   line-height: 24px;
 }
@@ -1368,6 +1378,7 @@ div.contacts {
 
 .about-us p {
   width: 519px;
+  margin-bottom: 24px;
 
   font-size: 13px;
   line-height: 24px;
@@ -1387,13 +1398,14 @@ div.contacts {
 
 .list-orders {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0;
+  padding-left: 37px;
 }
 
 .list-orders li {
   position: relative;
 
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .list-orders li:last-child {
@@ -1423,8 +1435,12 @@ div.contacts {
   flex-direction: row;
   justify-content: space-between;
   min-height: 38px;
-  margin-top: 40px;
-  margin-bottom: 86px;
+  margin-top: 36px;
+  margin-bottom: 83px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .btn-map {
@@ -1861,14 +1877,14 @@ figure {
 .catalog-item .title {
   min-height: 40px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   padding: 0 25px;
 }
 
 .catalog-item .old-price {
   min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 5px;
 
   color: #999999;
   text-decoration: line-through;
@@ -1878,7 +1894,7 @@ figure {
   position: relative;
 
   width: 80px;
-  margin: 10px auto;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding: 10px 30px;
 
@@ -1901,11 +1917,7 @@ figure {
   border-left-color: #ee3643;
 }
 
-
-
-/* ================================ */
 /* ============ FOOTER ============ */
-/* ================================ */
 
 .main-footer {
   background-color: #32425c;
@@ -1939,7 +1951,7 @@ figure {
   display: block;
   padding-top: 17px;
   padding-right: 41px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   padding-left: 41px;
 
   font-size: 30px;
@@ -2070,7 +2082,7 @@ figure {
 .copyright {
   min-width: 230px;
   margin: 0;
-  margin-right: 140px;
+  margin-right: 160px;
 
   font-size: 16px;
   line-height: 18px;
@@ -2082,7 +2094,7 @@ figure {
 .academy {
   display: block;
   margin: 0;
-  padding-left: 40px;
+  padding-left: 35px;
 
   font-size: 16px;
   line-height: 18px;
@@ -2321,7 +2333,7 @@ figure {
   justify-content: space-between;
   align-items: center;
   width: 620px;
-  min-height: 282px;
+  height: 282px;
   margin-left: -310px;
 
   border-top: 7px solid #ee3643;
@@ -2560,7 +2572,7 @@ iframe {
   border: none;
 }
 
-/*.overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -2570,4 +2582,4 @@ iframe {
   height: 100%;
 
   background: rgba(255, 255, 255, 0.1);
-}*/
+}
