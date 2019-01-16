@@ -228,6 +228,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
+.header-top .active-cart {
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
 .checkout {
   padding-right: 22px;
   padding-left: 20px;
