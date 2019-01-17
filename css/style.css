@@ -59,6 +59,12 @@ input[type="radio"].visually-hidden {
   background-color: #f3f7f9;
 }
 
+.ilove-divatoz {
+  width: 100%;
+
+  background-color: #293449;
+}
+
 .header-top {
   position: relative;
 
@@ -993,7 +999,7 @@ input[type="radio"].visually-hidden {
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
   z-index: 2;
 
@@ -2342,7 +2348,7 @@ figure {
 
 .modal {
   position: fixed;
-  z-index: 3;
+  z-index: 5;
 
   color: #000000;
 
@@ -2455,7 +2461,7 @@ figure {
   top: 200px;
   left: 50%;
 
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -2593,14 +2599,55 @@ iframe {
   border: none;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
+/* animation */
 
-  width: 100%;
-  height: 100%;
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-  background: rgba(255, 255, 255, 0.1);
+.modal-show {
+  display: block;
+
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.modal-show {
+  display: flex;
 }
