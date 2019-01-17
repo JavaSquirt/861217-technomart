@@ -1940,7 +1940,7 @@ figure {
   display: none;
 }
 
-.catalog-item:nth-child(3) .actions {
+.catalog-item-active .actions {
   display: block;
 }
 
