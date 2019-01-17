@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="header-top">
-          <a class="header-logo" href="index.html">Техномарт</a>
-          <form class="search">
-            <input class="input" type="text" placeholder="Поиск:">
-            <button class="visually-hidden" type="submit">Найти</button>
-          </form>
-          <a class="book-cart" href="#">Закладки: 0</a>
-          <a class="book-cart cart" href="#">Корзина: 10</a>
-          <a class="checkout" href="#">Оформить заказ</a>
-        </div>
-      </div>
-      <div class="container">
-        <div class="header-middle">
-          <h1 class="heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-          <div class="header-contacts">
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+  <body>    
+    <header class="main-header">      
+        <div class="ilove-divatoz">
+          <div class="container">
+            <div class="header-top">
+            <a class="header-logo" href="index.html">Техномарт</a>
+            <form class="search">
+                <input class="input" type="text" placeholder="Поиск:">
+                <button class="visually-hidden" type="submit">Найти</button>
+            </form>
+            <a class="book-cart" href="#">Закладки: 0</a>
+            <a class="book-cart cart active-cart" href="#">Корзина: 10</a>
+            <a class="checkout" href="#">Оформить заказ</a>
+            </div>
           </div>
-          <div class="menu">
-            <ul class="user-menu-exit">
-              <li><a class="catalog-user-name" href="#">Равшан Джамшутович</a></li>
+        </div>      
+        <div class="container">
+          <div class="header-middle">
+            <h1 class="heading-catalog">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+            <div class="header-contacts catalog">
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <div class="menu">
+              <ul class="user-menu-exit">
+                <li><a class="catalog-user-name" href="#">Равшан Джамшутович</a></li>
+                <li><a class="catalog-user-logout" href="#"></a></li>
+              </ul>
+              <ul class="user-menu">
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+              </ul>
+            </div>
+          </div>        
+          <nav class="main-navigation">
+            <ul class="header-top-navigation">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about-us.html">Компания</a></li>
+              <li><a>Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="special-offers.html">Спецпредложения</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <ul class="user-menu">
-              <li><a href="#">Мои заказы</a></li>
-              <li><a href="#">Личный кабинет</a></li>
-            </ul>
-          </div>
+          </nav>
         </div>
-      </div>
-      <div class="container">
-        <nav class="main-navigation">
-          <ul class="header-top-navigation">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about-us.html">Компания</a></li>
-            <li><a>Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="special-offers.html">Спецпредложения</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
-
     
     <div class="container">
       <ul class="breadcrumbs-catalog">
         <li>
-          <a href="index.html"><svg class="home" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg></a><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+          <a href="index.html" aria-label="На главную"><svg class="home" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg></a><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
         </li>
         <li>
           <a href="catalog.html">Каталог</a><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
@@ -72,22 +71,16 @@
         </li>
       </ul>
     </div>
-    
 
     <main>
-
       <div class="container">
-
         <div class="catalog-h1">
           <h1>Перфораторы</h1>
         </div>
-
         <div class="catalog-columns">
-
           <section class="container-filters">            
             <form class="filter" method="get" action="#">
               <h2 class="filter-h2">Фильтр:</h2>
-
               <fieldset class="filter-item">
                 <legend>Цена:</legend>
                 <div class="range-filter">
@@ -109,7 +102,7 @@
                 </div>
               </fieldset>
 
-              <fieldset class="filter-item">
+              <fieldset class="filter-brand">
                 <legend>Производители:</legend>
                 <ul>
                   <li class="filter-option">
@@ -135,7 +128,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="filter-item">
+              <fieldset class="filter-power">
                 <legend>Питание:</legend>
                 <ul>
                   <li class="filter-option">
@@ -152,21 +145,19 @@
             </form>
           </section>
 
-          <section class="catalog-items">
-            
+          <section class="catalog-items">      
             <div class="sort">
               <h2>Сортировка:</h2>
               <ul class="sort-list">
                 <li><a class="by-price" href="#">по цене</a></li>
                 <li><a class="type" href="#">по типу</a></li>
                 <li><a class="by-functionality" href="#">по функционалу</a></li>
-                <li><a class="up" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg></a></li>
-                <li><a class="down" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg></a></li>
+                <li><a class="up" href="#" aria-label="Вверх"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg></a></li>
+                <li><a class="down" href="#" aria-label="Вниз"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg></a></li>
               </ul>
             </div>
 
-            <div class="column">              
-
+            <div class="column">
               <div class="catalog-item">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -179,7 +170,6 @@
                 <div class="old-price">22500 ₽.</div>
                 <div class="new-price">15500 ₽.</div>
               </div>
-
               <div class="catalog-item">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -192,8 +182,7 @@
                 <div class="old-price">30500 ₽.</div>
                 <div class="new-price">25500 ₽.</div>
               </div>
-
-              <div class="catalog-item">
+              <div class="catalog-item catalog-item-active">
                 <div class="flag flag-new">Новинка</div>
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -206,7 +195,6 @@
                 <div class="old-price hidden">22500 ₽.</div>
                 <div class="new-price">12500 ₽.</div>
               </div>
-
               <div class="catalog-item">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -219,7 +207,6 @@
                 <div class="old-price">22500 ₽.</div>
                 <div class="new-price">15500 ₽.</div>
               </div>
-
               <div class="catalog-item">
                 <div class="flag flag-new">Новинка</div>
                 <div class="actions">
@@ -233,7 +220,6 @@
                 <div class="old-price">30500 ₽.</div>
                 <div class="new-price">25500 ₽.</div>
               </div>
-
               <div class="catalog-item">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -246,7 +232,6 @@
                 <div class="old-price">30500 ₽.</div>
                 <div class="new-price">12500 ₽.</div>
               </div>
-
               <div class="catalog-item">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -259,7 +244,6 @@
                 <div class="old-price">22500 ₽.</div>
                 <div class="new-price">15500 ₽.</div>
               </div>
-
               <div class="catalog-item">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -272,7 +256,6 @@
                 <div class="old-price">30500 ₽.</div>
                 <div class="new-price">25500 ₽.</div>
               </div>
-
               <div class="catalog-item">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
@@ -284,10 +267,8 @@
                 <div class="title">Перфоратор BOSCH BFG 2000</div>
                 <div class="old-price">30500 ₽.</div>
                 <div class="new-price">12500 ₽.</div>
-              </div>
-              
+              </div>              
             </div>
-
 
             <ul class="pagination-list">
               <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -295,11 +276,8 @@
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item pagination-next"><a href="#">Следующая</a></li>
             </ul>
-
           </section>
-
-        </div>        
-
+        </div>
       </div>
 
       <div class="description">
@@ -311,10 +289,8 @@
           </p>
         </div>
       </div>
-
     </main>
 
-    <!-- ФУТЕР -->
     <footer class="main-footer">
       <div class="container">
         <div class="footer-top">
@@ -365,17 +341,14 @@
       </div>
     </footer>
 
-    <!-- popUp Cart -->
-    <section class="modal modal-buy visually-hidden">
-      <div>
-        <p>Товар добавлен в корзину!</p>
-      </div>
-      <div>
-        <a class="button" href="#" tabindex="0">Оформить заказ</a>
-        <a class="button" href="#" tabindex="0">Продолжить покупки</a>
+    <section class="modal modal-cart visually-hidden">
+      <p>Товар добавлен в корзину!</p>
+      <div class="buttonz">
+        <a class="modal-cart-button" href="#" tabindex="0">Оформить заказ</a>
+        <a class="modal-cart-button" href="#" tabindex="0">Продолжить покупки</a>
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <div class="overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
