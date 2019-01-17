@@ -850,6 +850,14 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.promo-list-right a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-list-right a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .promo-list-right {
   margin: 0;
   padding-left: 0;
@@ -976,12 +984,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item:nth-child(1) {
+  background-color: #444444;
   background-image: url("../img/ravshan.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slider-item:nth-child(2) {
+  background-color: #444444;
   background-image: url("../img/jamshut.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1806,6 +1816,11 @@ figure {
   background-color: #ffffff;
 }
 
+.goods .row {
+  display: flex;
+  margin-right: -20px;
+}
+
 .catalog-items .row {
   display: flex;
   margin-right: -20px;
@@ -1923,6 +1938,10 @@ figure {
 
 .catalog-item .actions {
   display: none;
+}
+
+.catalog-item:nth-child(3) .actions {
+  display: block;
 }
 
 .catalog-item:hover .actions {
