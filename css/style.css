@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
 
   min-width: 220px;
   padding-top: 11px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
 
   font-size: 24px;
   line-height: 24px;
@@ -278,9 +278,9 @@ input[type="radio"].visually-hidden {
 }
 
 .heading-index {
-  width: 200px;
+  width: 204px;
   margin: 0;
-  margin-right: 43px;
+  margin-right: 40px;
   padding-left: 51px;
 
   font-size: 16px;
@@ -290,9 +290,9 @@ input[type="radio"].visually-hidden {
 }
 
 .heading-catalog {
-  width: 200px;
+  width: 204px;
   margin: 0;
-  margin-right: 55px;
+  margin-right: 52px;
   padding-left: 51px;
 
   font-size: 16px;
@@ -1390,6 +1390,10 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   -ms-flex-wrap: wrap;
 }
 
+.brands-list li {
+  display: flex;
+}
+
 .brands-list a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1943,7 +1947,7 @@ section.container-filters {
   border: 1px solid #e5e5e5;
 }
 
-figure {
+figure.image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1951,7 +1955,7 @@ figure {
   align-items: center;
   width: 218px;
   min-height: 170px;
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   -webkit-box-align: center;
@@ -2004,7 +2008,9 @@ figure {
 .catalog-item {
   position: relative;
 
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 218px;
   min-height: 316px;
   margin-right: 20px;
@@ -2122,6 +2128,7 @@ figure {
   margin-bottom: 8px;
   padding: 0 25px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
