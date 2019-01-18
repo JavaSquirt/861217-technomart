@@ -1415,6 +1415,11 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
   -ms-flex-pack: center;
 }
 
+.brands-list a img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .delivery-and-services-header {
   background-color: #f4f7f9;
 }
